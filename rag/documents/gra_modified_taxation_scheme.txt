@@ -1,0 +1,21 @@
+GRA MODIFIED TAXATION SCHEME (MTS) — INFORMAL SECTOR TAXATION
+
+The Ghana Revenue Authority (GRA) operates a Modified Taxation Scheme (MTS), a simplified form of Personal Income Tax designed for people working in the informal sector — including artisans, traders, hairdressers, seamstresses, mechanics, food vendors, and similar small-scale operators. GRA describes this as a "pay-as-you-go" digital approach that replaces complex traditional tax assessments with simplified registration and payment tools.
+
+The MTS has three main categories:
+
+1. Presumptive Tax Based on Instalment (PTI) — fixed tax amounts based on income level and business activity, generally for businesses with average annual turnover not exceeding GHS 20,000 over three consecutive years (one or two years of data can be used if three years isn't available).
+
+2. Presumptive Tax Based on Turnover (PTT) — a flat rate of 3% applied to annual turnover, generally for businesses with turnover above GHS 20,000 but not exceeding GHS 500,000.
+
+3. Modified Cash Basis (MCB) — tax calculated on earnings after deducting expenses related to those earnings, typically for slightly larger informal operations.
+
+To qualify for PTI or PTT, a person must earn income only from sources within Ghana and must not be registered for VAT. The following CANNOT use PTI or PTT and must instead use MCB or standard taxation: professionals with formal qualifications (e.g. lawyers, engineers, accountants), owners of multiple businesses or outlets, partners in formally registered business partnerships, and anyone who voluntarily opts out of presumptive tax.
+
+GRA also operates a Small Taxpayer Office (STO) network — around 50 offices nationwide — as a one-stop shop for small/informal taxpayers to handle domestic tax transactions. Small taxpayers are presumed to operate informally and generally not keep full business records. GRA also issues a Tax Stamp — a specially designed stamp given to small-scale informal businesses as evidence of having paid their taxes.
+
+The VAT Flat Rate Scheme (VFRS) applies to most small taxpayers who are registered for VAT (turnover above the VAT threshold), simplifying VAT compliance compared to the standard VAT regime.
+
+Context: Ghana's informal sector makes up roughly 80% of the country's workforce (Ghana Statistical Service, 2023) but contributes only around 30% of GDP, a gap attributed to complex tax processes, low tax morale, and limited tax awareness — which is part of why GRA introduced MTS.
+
+For Sika AI: use this to explain likely tax categories to informal workers, but always tell the user that current turnover thresholds, rates, and STO locations should be confirmed with GRA (gra.gov.gh) directly, since GRA periodically updates thresholds through annual budget statements.

@@ -1,0 +1,24 @@
+COMMON FINANCIAL SCAM PATTERNS AFFECTING GHANAIANS (PROTECTIVE OVERVIEW)
+
+Ghanaian consumers, particularly mobile money users, have been targeted by a range of fraud patterns reported by Bank of Ghana, telco fraud desks, and consumer protection sources. This document summarizes general categories and protective responses — not operational detail — for use in user-facing guidance.
+
+General categories of reported fraud:
+- Impersonation of trusted institutions or people: fraudsters posing as telco customer care, bank staff, government officials, or even cloned voices of family members, typically creating urgency or fear to prompt quick action.
+- Unauthorized SIM reissuance: criminals gaining control of a victim's phone number through fraudulent means, which can then be used to intercept codes tied to a mobile money account.
+- Fake investment or job schemes: offers of unusually high, guaranteed, low-risk returns, or job opportunities that require an upfront "registration" or "processing" payment before anything is delivered.
+- Romance-based fraud: relationships built over messaging platforms that escalate into requests for money, often for a fabricated emergency.
+- Money mule recruitment: being asked to receive transfers into your own mobile money account and forward them elsewhere for a fee — this can carry serious legal risk to the account holder, since Ghana's Anti-Money Laundering Act framework can implicate the receiving account holder, and accounts used this way risk being frozen by Bank of Ghana.
+- Fake agent scams: unlicensed or unofficial mobile money agent setups designed to intercept transaction details or PINs during ordinary cash transactions.
+
+Shared red flags across these patterns: any request for a PIN, OTP (one-time password), or full account/Ghana Card details over a phone call or message; pressure to act immediately or to keep an opportunity secret from family; guaranteed high returns with no real risk explained; and unsolicited contact claiming to be from a bank, telco, or government body asking to "verify" sensitive details.
+
+Protective actions:
+- Never share a MoMo PIN or OTP with anyone — legitimate telcos, banks, and government agencies do not ask for these over a call or message.
+- If contacted by someone claiming to represent an institution, hang up and call that institution back using its official published number, rather than any number the caller provides.
+- Verify unexpected requests for money — including from someone who sounds like a known contact — through a separate, trusted channel before acting.
+- Report suspected fraud promptly: to the mobile network's official fraud/customer care line, to Bank of Ghana, and where relevant to Ghana's Cyber Security Authority or the police. Faster reporting improves the chance of freezing funds before they are moved further.
+- Be cautious about agreeing to receive and forward funds for someone else, even for a fee — this can carry legal risk regardless of whether the account holder realized the money was linked to fraud.
+
+Relevant legal context: Ghana's Cybercrime Act (Act 1038) covers computer and identity fraud offences, and Ghana's Anti-Money Laundering Act framework covers the movement of illicit funds through accounts, including via money mule arrangements.
+
+For Sika AI: use this only at the pattern/category level described above. Do not provide step-by-step breakdowns of how any specific scam technique is executed, do not name specific scam scripts or exact phrases scammers use, and always end scam-related guidance with concrete protective/reporting steps rather than just a diagnosis.

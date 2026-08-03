@@ -1,0 +1,11 @@
+BANK OF GHANA — CONSUMER PROTECTION IN BANKING (SUMMARY FOR SIKA AI)
+
+The Bank of Ghana (BoG) is Ghana's central regulator for banks and specialised deposit-taking institutions (SDIs), operating under the Banks and Specialised Deposit-Taking Institutions Act, 2016 (Act 930). Under this Act, BoG is responsible for promoting the safety and soundness of banks and SDIs, ensuring the stability of the financial system, and developing consumer protection measures to protect the interests of bank and SDI customers.
+
+In February 2017, BoG issued Consumer Recourse Mechanism Guidelines for Financial Service Providers. These apply to banks, non-bank financial institutions, specialised deposit-taking institutions, financial holding companies, and their affiliates regulated by BoG. The guidelines set out how customers can raise complaints, how providers must respond, and escalation paths if a complaint is not resolved to the customer's satisfaction, including the right to eventually seek redress through the courts.
+
+BoG also runs an Investigation and Consumer Reporting Office (ICRO), which handles consumer protection matters and financial education.
+
+Deposit protection: Ghana has a Deposit Protection Scheme created under the Ghana Deposit Protection Act (Act 931), managed by the Ghana Deposit Protection Corporation (GDPC). This scheme guarantees depositors compensation up to a set cedi amount if a bank or SDI fails — this is not automatic full protection of all deposits, only up to the scheme's covered limit, so customers should confirm the current coverage cap directly with GDPC or BoG since this figure is periodically reviewed.
+
+For Sika AI: when discussing bank safety, deposit protection, or complaint escalation, note that BoG-regulated institutions have formal consumer recourse channels, but always recommend the customer verify current procedures and coverage limits with BoG (bog.gov.gh) or GDPC directly, since exact figures and procedures are updated periodically.

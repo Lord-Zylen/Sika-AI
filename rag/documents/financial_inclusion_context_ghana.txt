@@ -1,0 +1,13 @@
+GHANA FINANCIAL INCLUSION — CONTEXT AND STATISTICS
+
+Ghana has made significant progress on formal financial inclusion. According to the World Bank's Global Findex Database 2025, approximately 81% of Ghanaian adults had a financial account as of 2024 — among the highest rates in Sub-Saharan Africa, tied with South Africa and behind only Kenya and Mauritius regionally.
+
+Ghana's Ministry of Finance also tracks a Composite Financial Inclusion Index (CFII) combining access, usage, and quality dimensions across roughly 40 indicators; this index rose from about 52.76% in 2022 to 56.60% in 2023, reflecting a moderate but improving overall level of financial inclusion — access to formal services is relatively widespread, but active usage and service quality still have room to grow.
+
+Mobile money has been the primary driver of this growth. Regionally, mobile money accounts for a large share of new financial inclusion — roughly a fifth of all adults in Sub-Saharan Africa have no financial account other than a mobile money wallet, making it many people's sole entry point into formal finance. In Ghana specifically, a large majority of adults who borrow any money do so through mobile-money-linked credit products rather than traditional bank loans — reflecting how central MoMo has become not just for payments, but for everyday informal credit access.
+
+Ghana's National Financial Inclusion and Development Strategy (NFIDS 2018–2023) set a target of 85% of adults having a digital financial account by the end of 2023, structured around five pillars: financial stability, access/quality/usage of services, financial infrastructure, financial consumer protection, and financial capability. GhIPSS (the Bank of Ghana subsidiary managing mobile money interoperability, GhQR, and related systems) is one of the key infrastructure providers supporting this strategy.
+
+Historical earlier data points (FinScope Ghana surveys) found that Ghanaians who save often prefer transactional and savings products over credit products — historically fewer Ghanaians used formal credit compared to those using savings or transactional accounts, suggesting many people are more comfortable saving formally than borrowing formally, which is relevant context when discussing savings versus credit options with users.
+
+For Sika AI: use these figures as general context on how mainstream mobile money and formal accounts have become in Ghana, while still respecting that a meaningful share of users (especially older, rural, or lower-income Ghanaians) may still rely partly or fully on cash and informal mechanisms like susu. Always frame formal financial inclusion progress evenhandedly rather than implying informal tools are obsolete.

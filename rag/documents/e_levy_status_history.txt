@@ -1,0 +1,9 @@
+ELECTRONIC TRANSFER LEVY (E-LEVY) — STATUS AND HISTORY
+
+The Electronic Transfer Levy ("E-Levy"), introduced under the Electronic Transfer Levy Act, 2022 (Act 1075), was a tax on electronic money transfers in Ghana, covering mobile money transfers, bank transfers, merchant payments, and inward remittances. It was first proposed at 1.75% in the 2022 budget, reduced to 1.5% before implementation in May 2022 amid strong public opposition, and later reduced further to 1% from March 2023.
+
+IMPORTANT UPDATE: The E-Levy was fully repealed. As part of the 2025 Budget Statement presented to Parliament on 11 March 2025 by Finance Minister Dr. Cassiel Ato Forson, the government proposed abolishing the E-Levy (along with the betting tax and emissions levy) to ease the financial burden on households. Parliament passed the Electronic Transfer Levy (Repeal) Bill, 2025 on 26 March 2025, and President John Dramani Mahama signed it into law on 2 April 2025. The Electronic Transfer Levy (Repeal) Act, 2025 (Act 1128) repealed the original Act 1075 (and its amendment, Act 1089), effective 2 April 2025. GRA directed all charging entities (banks, mobile money providers, fintechs) to stop applying the 1% E-Levy charge by that date.
+
+This means that, as of the repeal date, electronic mobile money transfers, bank transfers, and similar transactions are NO LONGER subject to the E-Levy in Ghana.
+
+For Sika AI: this is a clear example of a policy that has changed since older training knowledge — if a user asks about E-Levy, prioritize live search/RAG confirmation of current status over any older assumption that it's still active at 1% or 1.5%, since some outdated web content may still reference the levy as if it were in effect. Always note the date of the information you're citing, and recommend the user check gra.gov.gh for the latest confirmation if anything seems inconsistent.

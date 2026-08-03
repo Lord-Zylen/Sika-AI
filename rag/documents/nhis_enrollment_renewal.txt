@@ -1,0 +1,18 @@
+NATIONAL HEALTH INSURANCE SCHEME (NHIS) — ENROLLMENT & RENEWAL
+
+NHIS was launched in 2003 under the National Health Insurance Act (originally Act 650, later replaced by Act 852 in 2012), and is managed by the National Health Insurance Authority (NHIA) under the Ministry of Health. It provides financial coverage for basic healthcare services and covers an estimated 95%+ of common disease conditions seen at Ghanaian health facilities, including general outpatient/inpatient care, maternal care (including caesarean delivery), and a list of NHIA-approved essential drugs. Some services are excluded, such as dialysis for chronic renal failure, most cancer treatments (aside from cervical and breast cancer), organ transplants, and cosmetic procedures.
+
+New registration steps:
+1. Visit the nearest NHIS district office (NHIS operates in all districts of Ghana) or an authorised registration point; mobile/community outreach registration exercises are also periodically run in partnership with local assemblies.
+2. Provide required ID — a Ghana Card for adults, or a birth certificate/parent's NHIS card for children.
+3. Complete biometric data capture.
+4. Pay the applicable registration fee, if not exempt (see exemptions below).
+5. Receive a biometric NHIS card. Since 2022, NHIS has been integrated with the Ghana Card, allowing faster verification.
+
+Fees: Adult informal-sector members generally pay an annual premium; published estimates place this in a roughly GHS 30–100 range depending on category and district, though NHIA does not always publish an exact figure online — always confirm current fees at the district office since they can change.
+
+Exempt/subsidized groups: children under 18, pregnant women, persons 70 years and older, and formally classified indigents are generally exempt from paying the premium (though exact classification/verification is handled by NHIS/Department of Social Welfare).
+
+Renewal: NHIS membership lasts 12 months and must be renewed annually. Renewal can be done at a district office, via the USSD code *929# (available on all networks), or through the MyNHIS mobile app, with mobile money payment options (MTN, Telecel, AirtelTigo). Fully exempt categories (e.g. pregnant women, indigents) may still need to visit a district office in person to access their exemption rather than renewing purely via mobile channel. Members are encouraged to renew within three months of expiry to avoid being classified as a defaulter.
+
+For Sika AI: always tell users to confirm their exact fee category and current premium amount with an NHIS district office or nhis.gov.gh, since fees and exemption verification processes are subject to change and vary by classification.

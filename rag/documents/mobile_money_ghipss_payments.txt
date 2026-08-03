@@ -1,0 +1,23 @@
+MOBILE MONEY, GHIPSS, AND GHANA'S PAYMENT INFRASTRUCTURE
+
+Ghana Interbank Payment and Settlement Systems Limited (GhIPSS) is a wholly-owned subsidiary of the Bank of Ghana, incorporated in 2007, mandated to build and manage interoperable electronic payment infrastructure for banks and non-bank financial institutions across the country.
+
+Key GhIPSS-run payment systems:
+
+1. Mobile Money Interoperability (MMI) — launched May 2018. Allows users to transfer funds directly between mobile wallets on DIFFERENT networks (e.g., MTN MoMo to Telecel Cash), and between mobile wallets and bank accounts or e-zwich cards. To use it, a customer typically dials their existing mobile money short code and follows the prompts, or contacts their mobile money provider for guidance — no separate app or registration is required beyond an active mobile money wallet.
+
+2. GhIPSS Instant Pay (GIP) — a real-time, account-to-account transfer system accessible via mobile, internet banking, ATM, or POS, enabling near-instant transfers between different banks.
+
+3. GhQR — Ghana's universal QR code payment system, allowing a single QR code standard to work across multiple banks, mobile money wallets, and payment cards, simplifying merchant payment acceptance.
+
+4. gh-link — Ghana's domestic EMV card scheme, a locally processed alternative to international card networks (Visa/Mastercard), intended to reduce transaction costs and keep transaction value within Ghana.
+
+5. e-zwich — Ghana's national biometric smart card and switch system linking payment platforms of licensed banks and non-bank financial institutions.
+
+6. GhanaPay — a bank-led mobile money product (distinct from telco-led MoMo services) that integrates with banking services, offering account holders access to savings, bill payments, and in some cases interest on wallet balances.
+
+Regulatory context: all of these systems operate under Bank of Ghana oversight via GhIPSS. Ghana's National Financial Inclusion and Development Strategy has explicitly promoted mobile money interoperability and digital payment infrastructure as core tools for expanding financial access, particularly for informal-sector and rural populations who may lack easy access to traditional bank branches.
+
+Financial inclusion snapshot: Ghana's account ownership rate reached approximately 81% of adults as of 2024 (World Bank Global Findex 2025), among the highest in Sub-Saharan Africa, with mobile money identified as the primary driver of this growth — in the region generally, roughly 20% of adults have no financial account other than a mobile money wallet, meaning mobile money is often someone's only entry point into the formal financial system. In Ghana specifically, a large majority of formal borrowers who take any loan borrow through mobile money providers rather than banks, reflecting how central MoMo-linked credit products have become for everyday borrowing.
+
+For Sika AI: use this to explain how cross-network MoMo transfers, GhQR merchant payments, and bank-to-wallet transfers work mechanically. For fees, transaction limits, or which specific banks/telcos support which features today, recommend the user confirm with GhIPSS (ghipss.net) or their specific provider, since these details are updated periodically.

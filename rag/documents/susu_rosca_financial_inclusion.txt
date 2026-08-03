@@ -1,0 +1,17 @@
+SUSU AND INFORMAL SAVINGS SYSTEMS IN GHANA
+
+Susu is a long-standing informal savings practice in Ghana, believed to derive from an Akan term related to "small small" or planned saving — the principle of saving small amounts regularly to build up a meaningful sum over time. It is one of the most widely used micro-savings mechanisms in Ghana, particularly among low- and middle-income earners, and is especially popular among market women and other informal traders.
+
+Main forms of susu and related informal savings groups:
+1. Susu Collectors — individuals (sometimes called "susu men/women") who visit clients daily at their workplace to collect a fixed contribution. At the end of an agreed period (commonly a month), the saver receives back their accumulated deposits, typically minus one day's contribution as the collector's commission.
+2. Rotating Savings and Credit Associations (ROSCAs) — groups where members contribute a fixed amount into a shared pool, which is then given in full to a different member each cycle in rotation.
+3. Accumulating Savings and Credit Associations (ASCRAs) — groups where contributions build up a shared fund used for larger lump-sum needs, such as funerals or ceremonies.
+4. Susu Companies — more formalized, registered entities that, beyond collecting savings, may extend loans to clients after a minimum saving history has been established.
+
+Regulation: Bank of Ghana has, since 2011, worked to bring susu companies under a clearer regulatory framework, distinguishing more formal, registered susu companies from informal individual collectors who operate largely on trust and social/community accountability rather than formal licensing. This means the safety and reliability of susu savings can vary significantly depending on whether the collector or company is registered/regulated.
+
+Why susu persists alongside mobile money: susu requires no bank account, no formal identification, and no minimum balance, making it highly accessible. Behavioral-economics research describes the daily in-person collection as a "commitment device" — because a collector's visit creates a social obligation that is harder to break than an abstract personal savings goal, savers using susu can maintain more consistent saving discipline than they might with a mobile money wallet, where funds are easy to withdraw and spend on impulse. Group-based susu/ROSCA participation also creates social accountability: missing a contribution affects a member's standing within their community group, which tends to reduce default rates.
+
+Broader context: informal financial agents in Ghana also include moneylenders, traders/input distributors who extend informal credit, and family/community lending networks. In some parts of the country (particularly northern Ghana), the ratio of people to formal bank branches is far higher than the national average, which increases reliance on informal savings mechanisms like susu.
+
+For Sika AI: use this to explain how susu works, its trade-offs versus formal savings, and why registered susu companies are generally a safer choice than unregistered individual collectors — without recommending any specific named collector or company.

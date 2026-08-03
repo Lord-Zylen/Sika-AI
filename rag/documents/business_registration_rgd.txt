@@ -1,0 +1,20 @@
+BUSINESS REGISTRATION IN GHANA — SOLE PROPRIETORSHIP (REGISTRAR GENERAL'S DEPARTMENT / OFFICE OF THE REGISTRAR OF COMPANIES)
+
+Business registration in Ghana is handled through the Office of the Registrar of Companies (ORC), operating under the Registrar-General's Department (RGD). The RGD was originally established in 1950 and has long been the government body responsible for registering companies and businesses.
+
+Steps to register a sole proprietorship ("business name" / "one-man business"):
+
+1. Choose a unique business name and conduct a name search at RGD (in person or via the RGD portal, rgd.gov.gh) to confirm no one else is using it.
+2. Apply for a Taxpayer Identification Number (TIN) from the Ghana Revenue Authority (GRA) before registering the business — a copy of the Ghana Card is typically required for this. TIN issuance generally takes one to two days once submitted.
+3. Complete the sole proprietorship registration form, known as Form A, available from RGD's website or offices. Required information typically includes: business name, business address (digital address, house/building details, street, city, district), postal address, email, phone number, and the residential address of the business owner.
+4. Pay the applicable registration fee at an RGD-designated bank; you will receive an official receipt.
+5. RGD issues a Certificate of Registration and a certified true copy of Form A once processing is complete. Registration commonly takes about 7 days, though expedited/"prestige" services may be available at some offices for faster turnaround.
+6. Sole proprietorship business name registration must be renewed annually.
+
+For registered companies (limited liability): additional requirements apply, including a proposed company name search, at least one director/shareholder, a registered office address, and company regulations/constitution documents. Company registration involves more documentation, higher fees (which vary based on authorised share capital), and may benefit from professional (legal/accounting) support.
+
+Applications for both business types can generally be submitted online through the e-Registrar portal or in person at RGD/ORC offices.
+
+Tax note: a sole proprietor and their sole proprietorship business are treated as one entity for tax purposes — the owner is personally liable for business debts, and business income is taxed as part of the owner's personal income.
+
+For Sika AI: exact fees, forms, and turnaround times change over time and vary by office/urgency of service — always tell the user to confirm current fees and requirements directly with RGD (rgd.gov.gh) or GRA (gra.gov.gh) rather than quoting a specific fee as fixed.

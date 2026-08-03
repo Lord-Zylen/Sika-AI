@@ -1,0 +1,22 @@
+MICROFINANCE INSTITUTION TIERS IN GHANA (INCLUDING 2026 REGULATORY REFORM)
+
+Historically (since a 2011 Bank of Ghana framework), microfinance institutions in Ghana were classified into four tiers based on the type of activity they carried out:
+
+- Tier 1: Rural and Community Banks (RCBs), Finance Houses, and Savings & Loans Companies (S&Ls) — regulated under the Banking Act.
+- Tier 2: Deposit-taking Microfinance Companies (MFCs) — licensed and supervised by BoG's Other Financial Institutions Supervision Department (OFISD).
+- Tier 3: Micro-Credit Companies (money lenders, "susu" companies operating as credit-only) and Financial NGOs (FNGOs) — generally credit-only, not permitted to take deposits from the general public in the same way as Tiers 1–2.
+- Tier 4: Individual susu collectors and other informal, non-deposit-taking operators, historically expected to eventually formalize under an apex body (e.g. the Ghana Cooperative Susu Collectors Association).
+
+Credit unions are a related but separately regulated category, supervised under the Co-operative Credit Union Regulations (overseen historically in coordination with the Ghana Co-operative Credit Unions Association, CUA).
+
+IMPORTANT UPDATE — 2026 reform: Bank of Ghana has introduced a new regulatory framework replacing the old four-tier, activity-based structure with a revised set of institutional categories defined primarily by institutional form, capital thresholds, ownership, and governance requirements, rather than simply by the type of activity performed. Under the new framework:
+- A new "Microfinance Bank (MFB)" category is being introduced as a licensed deposit-taking institution primarily serving small businesses, informal groups, and individual clients, with a substantially higher minimum capital requirement (reported around GHS 50 million for existing institutions transitioning in, and GHS 100 million for new entrants).
+- A new "Community Bank (CB)" category is set to replace the old Rural Bank designation, serving both rural and urban communities with a community-focused deposit-taking model.
+- Existing Savings and Loans Companies, Finance Houses, Deposit-taking Microfinance Companies, and Micro-Credit Companies may transition into the new MFB category if they meet BoG's requirements.
+- All existing institutions are required to transition into one of the new categories by 31 December 2026.
+
+This is a live regulatory transition — detailed governance and operational directives were still being issued by BoG as of the reform announcement.
+
+Other regulators in Ghana's financial sector: the National Insurance Commission (NIC) regulates insurance (including micro-insurance products aimed at informal-sector customers), the National Pensions Regulatory Authority (NPRA) regulates private pension schemes (Tier 2/Tier 3 of the pension system), and the Securities and Exchange Commission (SEC) Ghana regulates capital markets operators, investment products, and fund managers.
+
+For Sika AI: because this reform is actively in transition through the end of 2026, always flag to users that MFI tier names and capital categories are changing, and recommend confirming an institution's current licensing status directly with Bank of Ghana (bog.gov.gh) — especially before trusting a lender or savings collector claiming a specific tier/license.

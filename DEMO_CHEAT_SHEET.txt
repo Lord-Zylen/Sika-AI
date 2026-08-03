@@ -1,0 +1,251 @@
+SIKA AI — LIVE DEMO CHEAT SHEET
+=================================
+
+WHAT IS SIKA AI?
+An agentic financial assistant for Ghana's formal and informal economy.
+Built for market traders, drivers, farmers, salaried workers, students,
+and small business owners who need help with money matters in Ghana.
+
+TECH STACK
+- LLM: Groq-hosted Llama 3.3 70B (free, fast, OpenAI-compatible API)
+- Embeddings: sentence-transformers (all-MiniLM-L6-v2, runs locally, free)
+- Vector DB: ChromaDB (stores knowledge base chunks)
+- Web Search: DuckDuckGo via ddgs (free, no API key)
+- UI: Streamlit chat interface
+- Language: Python 3.14
+
+
+HOW THE AGENT WORKS
+====================
+
+When a user sends a message, here's what happens step by step:
+
+1. SYSTEM PROMPT ASSEMBLY (main.py → build_system_message)
+   - The base system prompt loads Sika AI's persona, tone rules,
+     tool instructions, and domain boundaries
+   - Skill SUMMARIES are loaded (one line each, not full content)
+     to save tokens — full skill content is loaded on demand via
+     the load_skill tool when the LLM identifies a matching skill
+   - RAG retrieval fires: the user's message is embedded locally
+     (sentence-transformers), matched against ChromaDB (~47 chunks),
+     and the top-4 most relevant chunks are injected into the prompt
+   - Result: a lean system message with persona + skill summaries +
+     relevant knowledge base context
+
+2. AGENT LOOP (main.py → chat)
+   - Messages are sent to the LLM (Groq / Llama 3.3) with 9 function
+     tool definitions in OpenAI function-calling format
+   - The LLM decides: answer directly, or call a tool first
+   - If it calls a tool → the tool function runs → result is appended
+     as a "tool" message → the loop repeats so the LLM can use the
+     result in its answer
+   - Max 6 tool rounds per turn (prevents infinite loops)
+   - If the LLM hallucinates a tool name that doesn't exist, Groq's
+     API returns a 400 error → caught automatically → retried without
+     tools so the model answers from RAG/knowledge instead
+   - Final answer is returned to the Streamlit UI
+
+3. THE FOUR LAYERS IN PRACTICE
+   User asks: "What are the current USD to GHS rates?"
+   → Tool layer: get_forex_rates() fires, fetches live data
+   → LLM formats the answer with source citation
+
+   User asks: "How does susu work in Ghana?"
+   → RAG layer: susu_rosca_financial_inclusion.txt is retrieved
+   → LLM answers grounded in the sourced document
+
+   User asks: "I have a loan offer — 5% flat rate for 12 months"
+   → Skill layer: LLM calls load_skill("calculate-loan-repayment")
+     to get full instructions, then follows the structured steps,
+     asks for inputs one at a time, calculates effective annual rate
+
+   User asks: "What happened on the Ghana Stock Exchange today?"
+   → Web search layer: DuckDuckGo search fires
+   → LLM answers with titles, URLs, and snippets from results
+
+
+HOW IT WAS BUILT
+=================
+
+1. CONFIG LAYER (config.py)
+   - Single source of truth for API keys, model name, paths
+   - Loads secrets from logs/.env (never committed to git)
+   - LLM provider is swappable via env vars (Groq/OpenAI/Ollama)
+   - Default: Groq free tier (llama-3.3-70b-versatile)
+
+2. KNOWLEDGE BASE (rag/)
+   - 11 source documents written from official Ghana sources:
+     BoG, GRA, RGD, SSNIT, NHIA, GhIPSS, and financial inclusion
+     research
+   - build_index.py chunks each document into ~800-character overlapping
+     pieces, embeds them with sentence-transformers (local, free),
+     and stores vectors + metadata in ChromaDB
+   - retriever.py embeds the user's query, finds the top-4 nearest
+     chunks by cosine similarity, and returns them as context
+   - Index is rebuilt by running: python rag/build_index.py
+
+3. TOOLS (tools/) — 9 tools total
+   - live_data.py (4 tools):
+     get_forex_rates → live exchange rates via open.er-api.com
+     get_bog_policy_rate → Bank of Ghana policy rate (reference)
+     get_inflation_rate → Ghana inflation rate (reference)
+     web_search → DuckDuckGo search, returns titles/URLs/snippets
+   - calculator.py (4 tools):
+     calculate_compound_interest → savings/investment projections
+     calculate_loan_payment → monthly loan amortization
+     project_savings → future value of regular savings
+     convert_currency → foreign currency to GHS
+   - skills/loader.py (1 tool):
+     load_skill → loads full SKILL.md content on demand
+   - All tools return JSON strings, defined in OpenAI function-calling
+     schema format (TOOLS_SCHEMA in __init__.py)
+
+4. SKILLS (skills/) — lazy-loaded for token efficiency
+   - 9 SKILL.md files in subdirectories, each a structured guide
+     for a repeatable multi-step task
+   - loader.py auto-discovers them — drop a new <name>/SKILL.md
+     folder and it appears in the next conversation
+   - On startup, only ONE-LINE SUMMARIES are loaded into the prompt
+     (saves ~5K tokens per request)
+   - When the LLM identifies a matching skill, it calls load_skill()
+     to get the full step-by-step instructions on demand
+   - Skills instruct the LLM to ask for inputs ONE at a time,
+     follow defined decision logic, and present specific output formats
+
+5. SYSTEM PROMPT (system_prompt.py)
+   - Defines Sika AI's identity, tone (warm, patient, community-member)
+   - Sets rules: always use tools for live data, cite sources, never
+     fabricate document references, explain jargon, offer Twi/Ga/Ewe
+   - Lists all 9 available tool names explicitly (prevents hallucination)
+   - Web search guidance: when to search, how to cite URLs
+   - Domain coverage (mobile money, susu, banks, tax, pensions)
+   - Hard boundaries: not a licensed advisor, no transactions,
+     no bypassing KYC, no specific buy/sell recommendations
+
+6. ORCHESTRATOR (main.py)
+   - Wires everything together: prompt + skill summaries + RAG + tools
+   - Handles the agent loop with tool dispatch (max 6 rounds)
+   - Catches API errors (tool hallucination, rate limits) gracefully
+   - Returns (reply, updated_history) for the UI to render
+
+7. UI (app.py)
+   - Streamlit chat interface with session-state conversation history
+   - Displays existing messages, accepts new input, shows thinking
+     spinner while the agent loop runs
+   - Sidebar with clear-conversation button and disclaimer
+
+
+THE 9 AVAILABLE TOOLS
+======================
+
+Live Data:
+  get_forex_rates        → USD/GBP/EUR/NGN/ZAR/CNY to GHS
+  get_bog_policy_rate    → Bank of Ghana monetary policy rate
+  get_inflation_rate     → Ghana year-on-year inflation rate
+
+Calculations:
+  calculate_compound_interest → savings/growth projections
+  calculate_loan_payment      → monthly loan amortization
+  project_savings             → future value of regular savings
+  convert_currency            → foreign amount to GHS
+
+Knowledge:
+  web_search             → DuckDuckGo search (titles, URLs, snippets)
+  load_skill             → load full SKILL.md instructions on demand
+
+
+THE 9 SKILLS
+==============
+  calculate-loan-repayment      → flat rate vs reducing balance math
+  budget-irregular-income       → budgeting for seasonal/variable earners
+  compare-savings-options       → susu vs MoMo vs bank vs credit union
+  register-business             → sole prop / limited company via RGD
+  get-tin                       → Ghana Card / TIN linkage via GRA
+  detect-scam-pattern           → red-flag screening (protective only)
+  explain-tax-obligation        → presumptive tax, VAT flat rate, PAYE
+  nhis-enrollment               → registration / renewal walkthrough
+  susu-to-bank-transition       → informal to formal savings guidance
+
+
+PROJECT STRUCTURE
+==================
+  config.py            — API keys, model name, paths (loads logs/.env)
+  system_prompt.py     — Sika AI persona + instructions
+  main.py              — orchestrator (agent loop, tool dispatch, RAG)
+  app.py               — Streamlit chat UI
+  tools/__init__.py    — tool schemas (9) + function map
+  tools/live_data.py   — forex, BOG rate, inflation, web_search
+  tools/calculator.py  — financial math functions
+  rag/build_index.py   — chunk + index documents into ChromaDB
+  rag/retriever.py     — query ChromaDB, build context for prompts
+  skills/loader.py     — skill summaries + on-demand full loading
+  rag/documents/       — 11 source .txt files
+  skills/              — 9 skill subdirs with SKILL.md each
+
+
+KEY GOTCHAS
+============
+- E-Levy was REPEALED in April 2025 — do not say it's still active
+- MFI tiers are being REFORMED through end of 2026 — always flag this
+- live_data.py has hardcoded reference rates — update periodically
+- Groq model sometimes hallucinates tool names — caught and retried
+- .env lives at logs/.env, not project root
+- rag/chroma_store/ is gitignored — rebuild with: python rag/build_index.py
+- Groq free tier: 100K tokens/day — large prompts eat the budget fast
+  (skill lazy-loading keeps requests lean at ~3K tokens each)
+
+
+DEMO COMMANDS
+==============
+  # Build/update RAG index (after adding docs):
+  python rag/build_index.py
+
+  # Launch chat UI:
+  streamlit run app.py
+
+  # Good demo questions (covers all 4 layers):
+  - "How does susu work in Ghana?"                     → RAG
+  - "I want to start a shop, how do I register?"       → Skill
+  - "What are the current forex rates?"                → Tool
+  - "I earn GHS 3000/month, save for 5 years"          → Tool
+  - "Is this MoMo message a scam?"                     → Skill
+  - "How do I get a TIN for my business?"               → Skill
+  - "What tax should I pay as a market trader?"         → Skill
+  - "Compare susu vs MoMo goal savings"                → Skill
+  - "How do I renew my NHIS card?"                      → Skill
+  - "What's the GDP of India?"                          → Web search
+  - "Who is the current BoG governor?"                 → Web search
+  - "What happened on the GSE today?"                  → Web search
+
+
+LLM PROVIDER FLEXIBILITY
+==========================
+  Current: Groq (free tier, llama-3.3-70b-versatile)
+  To switch, edit logs/.env:
+    # OpenAI:
+    LLM_BASE_URL=https://api.openai.com/v1
+    MODEL_NAME=gpt-4o
+
+    # Ollama (local, free):
+    LLM_BASE_URL=http://localhost:11434/v1
+    MODEL_NAME=llama3.2
+    GROQ_API_KEY=ollama
+
+
+NOTES FOR Q&A
+===============
+- "Is this financial advice?" → No, always says so. Recommends
+  confirming with licensed professionals or relevant institutions.
+- "How does it know Ghana-specific things?" → RAG knowledge base
+  with official source documents (BoG, GRA, RGD, SSNIT, NHIA, etc.)
+- "Does it cost money?" → LLM is on Groq free tier. Embeddings run
+  locally. No API costs for normal usage.
+- "Can it handle Twi/Ga/Ewe?" → The system prompt offers to switch
+  languages if the user asks, but quality depends on the LLM.
+- "Does it execute transactions?" → No, guidance and calculations only.
+- "How do I add new knowledge?" → Drop a .txt or .md file into
+  rag/documents/ and run: python rag/build_index.py
+- "How do I add a new skill?" → Create skills/<name>/SKILL.md with
+  trigger, required inputs, steps, and guardrails. Auto-discovered.
+- "What if it doesn't know something?" → Web search fires
+  automatically via DuckDuckGo, cites sources with URLs.

@@ -1,0 +1,7 @@
+openai
+chromadb
+sentence-transformers
+streamlit
+python-dotenv
+requests
+ddgs

@@ -1,0 +1,15 @@
+GHANA'S THREE-TIER PENSION SYSTEM (SSNIT / NPRA)
+
+Ghana's pension system, established under the National Pensions Act, 2008 (Act 766), has three tiers:
+
+Tier 1 — Basic National Social Security Scheme (mandatory): A defined-benefit scheme managed by the Social Security and National Insurance Trust (SSNIT). Formal-sector employees contribute a mandatory percentage of basic salary; contributions are tax-exempt and pay monthly pensions upon retirement, plus survivor and invalidity benefits. Of the total mandatory contribution, a portion is also channeled to NHIS to help fund national health insurance.
+
+Tier 2 — Mandatory Occupational Pension Scheme: A mandatory defined-contribution scheme, NOT managed by SSNIT but by NPRA-licensed private trustees. Pays a lump sum at retirement based on total contributions plus investment returns.
+
+Tier 3 — Voluntary Provident Fund / Personal Pension Scheme: A voluntary, privately managed defined-contribution scheme open to formal sector workers AND informal-sector/self-employed workers. Contributions of up to 16.5% of basic salary (for employees) are tax-deductible/tax-exempt. If a contributor stays in the scheme 10 years or more, they receive all contributions plus investment returns at exit. Exiting before the 10-year mark triggers a 15% marginal tax rate on the redemption amount. Early access before retirement is also possible after 5 years of contributions for informal-sector schemes (10 years for formal-sector schemes), or in cases of certified permanent incapacity or death (paid to beneficiaries/estate).
+
+Self-Employed Enrolment Drive (SEED): SSNIT runs a specific initiative (SEED) to enroll self-employed persons and informal-sector workers into the Tier 1 scheme, allowing them to contribute voluntarily on their full earnings for old-age and invalidity protection. Any self-employed worker aged 15–45 who has never been a SSNIT member can register; people who were formerly formally employed can also reactivate a dormant SSNIT account regardless of age.
+
+The National Pensions Regulatory Authority (NPRA) regulates and oversees all private and public pension activity, including Tier 2 and Tier 3 schemes and their licensed trustees.
+
+For Sika AI: use this to explain pension options for informal workers (especially SEED and Tier 3 voluntary schemes), but recommend the user confirm current contribution rates, minimum enrollment ages, and procedures directly with SSNIT (ssnit.org.gh) or NPRA (npra.gov.gh), since specific administrative details can change.
