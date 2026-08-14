@@ -8,9 +8,18 @@ from tools import TOOLS_SCHEMA, TOOL_MAP
 from rag.retriever import build_context
 from skills.loader import get_skill_summary
 
-client = OpenAI(api_key=LLM_API_KEY, base_url=LLM_BASE_URL)
-
 MAX_TOOL_ROUNDS = 6
+
+_client = None
+
+
+def _get_client():
+    """Create the LLM client lazily so importing this module never crashes,
+    even when API keys aren't set yet (e.g. a cold lambda without env vars)."""
+    global _client
+    if _client is None:
+        _client = OpenAI(api_key=LLM_API_KEY, base_url=LLM_BASE_URL)
+    return _client
 
 
 def build_system_message(user_query: str = "") -> str:
@@ -64,7 +73,7 @@ def chat(user_message: str, history: list[dict] | None = None) -> tuple[str, lis
 
     for _ in range(MAX_TOOL_ROUNDS):
         try:
-            response = client.chat.completions.create(
+            response = _get_client().chat.completions.create(
                 model=MODEL_NAME,
                 messages=messages,
                 tools=TOOLS_SCHEMA,
@@ -75,7 +84,7 @@ def chat(user_message: str, history: list[dict] | None = None) -> tuple[str, lis
             # our schema.  Retry once without tools so the model answers
             # from RAG / built-in knowledge instead of crashing.
             if "tool" in str(e).lower():
-                response = client.chat.completions.create(
+                response = _get_client().chat.completions.create(
                     model=MODEL_NAME,
                     messages=messages,
                 )
@@ -126,7 +135,7 @@ def chat(user_message: str, history: list[dict] | None = None) -> tuple[str, lis
             })
 
     # Fallback if we hit the tool round limit
-    final_response = client.chat.completions.create(
+    final_response = _get_client().chat.completions.create(
         model=MODEL_NAME,
         messages=messages + [{"role": "user", "content": "Please give your final answer now."}],
     )
