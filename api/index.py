@@ -29,6 +29,15 @@ def health():
     return {"status": "ok", "model": os.getenv("MODEL_NAME", "llama-3.3-70b-versatile")}
 
 
+@app.get("/api/envcheck")
+def envcheck():
+    return {
+        "GROQ_API_KEY": bool(os.getenv("GROQ_API_KEY")),
+        "OPENAI_API_KEY": bool(os.getenv("OPENAI_API_KEY")),
+        "GOOGLE_API_KEY": bool(os.getenv("GOOGLE_API_KEY")),
+    }
+
+
 @app.post("/api/chat")
 def chat_endpoint(req: ChatRequest):
     try:
