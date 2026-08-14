@@ -3,3 +3,4 @@ venv/
 rag/chroma_store/
 __pycache__/
 *.pyc
+.vercel/

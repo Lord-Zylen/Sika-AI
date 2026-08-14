@@ -1,32 +1,75 @@
-import os, sys
+"""Vector retrieval without a vector DB.
+
+Documents are embedded offline by rag/precompute_embeddings.py into
+rag/embeddings.json (committed to the repo). At query time we embed only
+the user's query via the Google Gemini embeddings API and do a cosine
+search over the precomputed vectors with numpy. This keeps the deploy
+small enough to run on Vercel serverless functions.
+"""
+import json
+import os
+import sys
+
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
-import chromadb
-from chromadb.utils import embedding_functions
-from config import VECTOR_DB_PATH
+import numpy as np
 
-EMBED_MODEL = "all-MiniLM-L6-v2"
+from config import EMBEDDING_MODEL, EMBEDDINGS_PATH, GOOGLE_API_KEY
 
-_client = chromadb.PersistentClient(path=VECTOR_DB_PATH)
-_embed_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-    model_name=EMBED_MODEL
-)
-_collection = _client.get_or_create_collection(
-    name="sika_knowledge", embedding_function=_embed_fn
-)
+_index = None
+_client = None
+
+
+def _get_client():
+    global _client
+    if _client is None:
+        from google import genai
+        _client = genai.Client(api_key=GOOGLE_API_KEY)
+    return _client
+
+
+def _load_index():
+    global _index
+    if _index is None:
+        if not GOOGLE_API_KEY or not os.path.exists(EMBEDDINGS_PATH):
+            return None
+        with open(EMBEDDINGS_PATH, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        vectors = np.array([c["embedding"] for c in data["chunks"]], dtype="float32")
+        # Normalize once so cosine similarity is a plain dot product.
+        norms = np.linalg.norm(vectors, axis=1, keepdims=True)
+        norms[norms == 0] = 1.0
+        _index = {"chunks": data["chunks"], "vectors": vectors / norms}
+    return _index
+
+
+def _embed_query(query: str):
+    resp = _get_client().models.embed_content(
+        model=EMBEDDING_MODEL,
+        contents=[query],
+        config={"task_type": "RETRIEVAL_QUERY"},
+    )
+    vec = np.array(resp.embeddings[0].values, dtype="float32")
+    norm = np.linalg.norm(vec)
+    return vec / norm if norm > 0 else vec
+
 
 def retrieve(query: str, top_k: int = 4):
     """Returns list of (text, source) dicts relevant to the query."""
-    if _collection.count() == 0:
+    idx = _load_index()
+    if idx is None or idx["vectors"].shape[0] == 0:
         return []
-    results = _collection.query(query_texts=[query], n_results=min(top_k, _collection.count()))
-    docs = results.get("documents", [[]])[0]
-    metas = results.get("metadatas", [[]])[0]
-    if not docs:
+    try:
+        q = _embed_query(query)
+    except Exception:
         return []
+    sims = idx["vectors"] @ q
+    top = int(min(top_k, idx["vectors"].shape[0]))
+    order = sims.argsort()[::-1][:top]
     return [
-        {"text": d, "source": m.get("source", "unknown")}
-        for d, m in zip(docs, metas)
+        {"text": idx["chunks"][i]["text"], "source": idx["chunks"][i]["source"]}
+        for i in order
+        if sims[i] > 0
     ]
 
 
