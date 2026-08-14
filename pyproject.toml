@@ -1,0 +1,21 @@
+[project]
+name = "sika-ai"
+version = "0.1.0"
+description = "Sika AI — RAG chatbot for Ghanaian financial guidance"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "openai",
+    "google-genai",
+    "numpy",
+    "python-dotenv",
+    "requests",
+    "ddgs",
+]
+
+[tool.vercel]
+# Tells Vercel which module exports the FastAPI app. Auto-detection gets
+# confused by the root app.py (Streamlit UI) and main.py (orchestrator),
+# which do not export a top-level "app"/"handler" variable.
+entrypoint = "api.index:app"
