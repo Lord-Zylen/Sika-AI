@@ -14,6 +14,10 @@ dependencies = [
     "ddgs",
 ]
 
+[project.scripts]
+# Legacy fallback some Vercel versions read: "module:object" form.
+app = "api.index:app"
+
 [tool.vercel]
 # Tells Vercel which module exports the FastAPI app. Auto-detection gets
 # confused by the root app.py (Streamlit UI) and main.py (orchestrator),
