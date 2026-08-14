@@ -1,0 +1,22 @@
+GHANA DEPOSIT PROTECTION SCHEME (GDPC) — DEPOSIT INSURANCE
+
+The Ghana Deposit Protection Corporation (GDPC) operates the national deposit insurance scheme under the Ghana Deposit Protection Act, 2016 (Act 931). It protects small depositors when a licensed bank or Specialized Deposit-Taking Institution (SDI) fails. The scheme launched in September 2019.
+
+CURRENT COVERAGE LIMITS:
+- Banks: maximum compensation of GHS 6,250 per depositor.
+- Specialized Deposit-Taking Institutions (SDIs — savings and loans, microfinance companies, rural/community banks): maximum GHS 1,250 per depositor.
+
+HOW IT WORKS:
+- All deposit accounts a depositor holds with the failed institution are aggregated for the compensation calculation, and any overdue liabilities owed to that institution are deducted.
+- Any amount above the insured limit is NOT covered by the scheme; the depositor may claim the excess from the Receiver/Liquidator of the failed institution.
+- Pay-outs begin about 6 days after the failure and must be completed within 30 days.
+- The scheme protects small deposits; keeping more than the limit in a single institution leaves the excess at risk.
+
+IMPORTANT UPDATE — UNDER REVIEW:
+- The Ghana Deposit Protection (Amendment) Act, 2025 now requires the GDPC Board to review the coverage limits every two years to keep compensation in line with economic conditions. The Board began such a review in May 2026, so the GHS 6,250 / GHS 1,250 limits may change. Always confirm current limits at gdpc.gov.gh before advising a user on how much is protected.
+
+CONTEXT:
+- The scheme was a response to the financial sector clean-up of 2017–2020, during which the government spent over GHS 21 billion compensating depositors of collapsed banks and other financial institutions.
+- Deposit insurance is backed by a Deposit Protection Fund financed by premiums from member institutions, with initial seed funding from the Government of Ghana and the Bank of Ghana (with KfW technical support).
+
+For Sika AI: reassure savers that deposits up to the limit are protected, but warn that money beyond the limit in one failed institution is not guaranteed. Advise spreading large balances across institutions and confirming the current limit at gdpc.gov.gh. Note that treasury bills and other investments are NOT deposits and are not covered by the scheme.

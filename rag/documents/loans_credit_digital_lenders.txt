@@ -1,0 +1,31 @@
+LOANS AND CREDIT IN GHANA — BANKS, MOBILE MONEY LOANS, AND CREDIT REPORTING
+
+Borrowing in Ghana ranges from informal (susu groups, family) to formal (banks, microfinance/SDIs) to digital (mobile-money loans). Digital lending has exploded because it needs no collateral or paperwork — but it is often expensive.
+
+MOBILE MONEY / DIGITAL LOANS:
+- MTN Qwik Loan (MTN MoMo, powered by Letshego Ghana) — borrow from as little as GHS 1 up to roughly GHS 1,000–2,000, repaid in 24 hours to 90 days. Pricing is high: roughly 9% for a 24-hour loan, a flat ~6.9% fee on the 30-day product, rising sharply for longer tenures (up to ~30% for 90 days). Approving/rejecting depends on MoMo activity (wallet age ~90+ days, monthly transaction volume, airtime spend) and credit history.
+- Other digital lenders: Branch, Fido, OKash, Hubtel Lend, AirtelTigo Money Boost, Telecel Cash Advance. Limits typically grow from small starter loans (GHS 50–200) as you repay on time.
+- These loans are automatically repaid by deduction from your MoMo wallet; keep funds available on the due date.
+
+COST WARNING:
+- Short tenures + flat fees can translate to very high effective annual rates. Mobile loans are best used as short-term bridging, not long-term borrowing. Borrow only what you can repay within the term.
+
+CREDIT REPORTING AND YOUR SCORE:
+- Ghana has licensed credit bureaus: XDS Data (formerly CreditInfo Ghana) and Dun & Bradstreet Ghana, regulated by the Bank of Ghana under the Credit Reporting Act, 2007 (Act 750).
+- Lenders (banks, fintechs, telcos) report and check records. Defaults are shared across lenders via the bureaus and can block you from future credit (bank loans, credit cards, other apps) and affect some background checks.
+- On-time repayment builds a positive file; missing payments damages it (defaults can follow you for years). You can request your credit report from a bureau (usually for a small fee, e.g., around GHS 20) to check and correct errors.
+- The Ghana Card is increasingly central: identity-linked credit means you cannot escape obligations by changing SIMs or numbers.
+- No single national FICO-style score exists — each lender scores differently — but shared default data matters everywhere.
+
+BANK LOANS:
+- Banks generally require: a valid Ghana Card, income proof/employment history or business records, and often a guarantor or collateral for larger loans. Interest is usually quoted annually (e.g., flat or reducing-balance) — always ask whether the rate is reducing balance or flat rate, because the true cost differs dramatically (see calculate-loan-payment skill).
+- Building a documented banking/MoMo history supports future loan approvals.
+
+GOOD PRACTICE FOR BORROWERS:
+1. Borrow only for something that improves your situation, and only what you can repay.
+2. Compare the true cost: ask for the annual effective rate, not just the daily/flat fee.
+3. Never borrow to gamble, and avoid loan apps with hidden fees or aggressive collection.
+4. Repay on time — it protects your credit file and grows your limits.
+5. If an app pressures you into a loan you don't understand, walk away; legitimate lenders disclose terms clearly.
+
+For Sika AI: when a user asks about taking a loan, first establish purpose and repayment capacity. If a mobile-money loan is proposed, convert the fee to an annualized cost and warn if it is very high. Explain that defaults hit their credit bureau file and future access to credit. Mention the option of a formal bank loan for larger needs and that building repayment history helps. Do not recommend a specific lender by name unless asked.

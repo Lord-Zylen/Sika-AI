@@ -1,0 +1,20 @@
+GHANA VAT REFORM 2026 — VALUE ADDED TAX ACT, 2025 (ACT 1151)
+
+The Value Added Tax Act, 2025 (Act 1151) took effect on 1 January 2026 and overhauled Ghana's VAT system. This is a major change from the pre-2026 rules and should be treated as the current position.
+
+WHAT CHANGED:
+1. VAT Flat Rate Scheme (VFRS) ABOLISHED. The former 3% flat rate on supplies of goods and the former 5% flat rate on certain supplies of immovable property were removed effective 1 January 2026. Businesses that used the flat rate (mainly wholesalers and retailers of goods) must now charge VAT at the standard rate.
+2. Unified standard rate: VAT 15% + NHIL 2.5% + GETFund 2.5% = effective total rate of 20% on the same taxable value. (The pre-2026 effective rate was 21.9%.)
+3. VAT registration threshold increased from GHS 200,000 to GHS 750,000 in annual taxable turnover.
+4. Input tax credit: businesses on the standard scheme can claim input VAT, subject to the rules in Act 1151 and GRA VAT administrative guidelines.
+5. Scope expanded to expressly include exploration of natural resources and export of non-traditional products (except cocoa, coffee, shea butter).
+6. Zero-rating on locally manufactured textiles extended to December 2028.
+7. Stricter penalties for failure to register for VAT.
+
+PRACTICAL GUIDANCE:
+- A retailer who previously paid 3% flat VAT must now register/remain registered, charge 15% VAT (plus levies), and can claim input tax credits.
+- Flat-rate operators below the registration threshold can apply to the Commissioner-General to be deregistered.
+- Existing flat-rate taxpayers who do not meet the threshold should remain registered until formally de-registered by the Commissioner-General after audit.
+- Records must support input tax claims; deductions are not allowed twice or for undeclared purchases beyond six months in transition.
+
+For Sika AI: when a user (trader, shop owner, contractor) asks "how much VAT do I pay?", the answer under current law is the standard 20% stack (15% VAT + 2.5% NHIL + 2.5% GETFund), NOT the old 3%/5% flat rates. Cite Act 1151 and note the effective date of 1 January 2026. Always direct users to gra.gov.gh to confirm their registration status and threshold.

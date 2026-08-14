@@ -1,0 +1,39 @@
+PERSONAL FINANCE FOUNDATIONS FOR GHANAIAN HOUSEHOLDS
+
+Practical money-management basics, adapted to the realities of the Ghanaian economy: irregular income, a mix of cash and mobile money, large family obligations, and limited access to formal credit. These are general principles, not binding rules.
+
+BUDGETING WITH IRREGULAR OR SEASONAL INCOME:
+- When income varies (traders, farmers, drivers, artisans), do not budget from last month's peak. Use a "base income" — your most reliable, lowest realistic monthly income — and treat anything above it as surplus.
+- Divide money into four buckets and decide shares up front:
+  1. Essentials: rent, food, transport, school fees, health.
+  2. Savings & investment: fixed amount or share of every sale — pay yourself first.
+  3. Debt repayment: if you have loans, clear the most expensive first.
+  4. Optional/fun: whatever remains.
+- Use a simple tracker (notebook or a mobile wallet statement) so money doesn't silently disappear.
+- During good months, pre-fund future essentials (buy staple food in bulk, top up school fees) to smooth bad months.
+
+EMERGENCY FUND:
+- Aim to build an emergency buffer equal to 1–3 months of essential expenses before taking on non-essential debt or investing.
+- Keep it accessible: a dedicated mobile-money wallet or savings account that you don't touch except for real emergencies.
+- Do not invest money you might need quickly in locked instruments (e.g., 364-day treasury bills) unless you can afford the lock-up.
+
+SAVING AND INVESTING:
+- Savings should earn something. Compare: susu (convenient, group discipline, but usually no interest), MoMo goal savings (some pay interest), bank fixed deposits, treasury bills, and credit-union savings. See the compare-savings-options skill.
+- Only consider investments (stocks, bonds, funds) for money you can leave untouched for 1–3 years.
+- If an offer promises "guaranteed" high returns, it is almost certainly a scam. Verify any institution with its regulator (BoG, SEC, NIC).
+
+DEBT DISCIPLINE:
+- A common safe guideline: total monthly debt payments should stay well below half of your base income.
+- Never borrow to gamble or to buy things that lose value on credit at very high cost.
+- If you are struggling, talk to the lender early — negotiating beats defaulting, which damages your credit file (see loans document).
+
+FAMILY AND COMMUNITY MONEY:
+- Set clear expectations with family/friends about what you can contribute — many Ghanaians over-give and under-save.
+- Community savings (susu, VSLA, rotating groups) work best as discipline tools and emergency pools, not as the primary home for large savings.
+- Protect against big shocks with insurance where cheap (e.g., NHIS, micro-insurance, compulsory motor third-party) rather than only relying on friends.
+
+INFORMAL SECTOR AND FORMAL ACCOUNTS:
+- Keep some savings in a formal account (bank or SDI) to build a documented history that can support future loans and to benefit from deposit protection up to the GDPC limit.
+- You do not have to abandon susu — many people use both: susu for daily discipline, a bank/SDI for larger sums.
+
+For Sika AI: tailor guidance to the user's actual situation (income pattern, dependants, existing debts). Work through one issue at a time, give concrete GHS figures from the user's numbers, and avoid overwhelming lists. Use the budgeting and savings-comparison skills when they fit.

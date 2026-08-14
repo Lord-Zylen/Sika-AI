@@ -1,0 +1,31 @@
+GHANA PERSONAL INCOME TAX — PAYE BANDS AND SELF-EMPLOYMENT
+
+Personal income tax in Ghana is progressive: each band rate applies only to the slice of chargeable income within that band, not the whole amount. The current bands were set by the Income Tax (Amendment) (No. 2) Act, 2023 (Act 1111) and took effect 1 January 2024. They remain the applicable bands (confirmed by GRA through 2026).
+
+MONTHLY RESIDENT BANDS (Act 1111):
+- First GHS 490/month: 0%
+- Next GHS 110 (490–600): 5%
+- Next GHS 130 (600–730): 10%
+- Next GHS 3,166.67 (730–3,896.67): 17.5%
+- Next GHS 16,000 (3,896.67–19,896.67): 25%
+- Next GHS 30,520 (19,896.67–50,416.67): 30%
+- Above GHS 50,416.67/month: 35%
+
+ANNUAL EQUIVALENTS:
+- First GHS 5,880/year: 0%
+- Next GHS 1,320 (5,880–7,200): 5%
+- Next GHS 1,560 (7,200–8,760): 10%
+- Next GHS 38,000 (8,760–46,760): 17.5%
+- Next GHS 192,000 (46,760–238,760): 25%
+- Next GHS 366,240 (238,760–605,000): 30%
+- Above GHS 605,000/year: 35%
+
+OTHER KEY FACTS:
+- Chargeable income is total income (employment, business, investment) less allowable deductions/reliefs. Employment income (PAYE) is deducted and remitted monthly by the employer on or before the 15th day of the following month.
+- Non-resident individuals are generally taxed at a flat rate of 25% of chargeable income.
+- Anyone earning above GHS 490/month as an employee is liable to personal income tax.
+- Self-employed people and informal workers may instead fall under the GRA Modified Taxation Scheme (presumptive tax based on instalment or turnover, or modified cash basis) — see the MTS document. Those earning income only from within Ghana and not VAT-registered can qualify for presumptive tax. Formally qualified professionals (lawyers, engineers, accountants), owners of multiple businesses, and partners in registered partnerships cannot use presumptive tax.
+- SSNIT pension contributions and Tier 3 voluntary contributions are tax-relieved subject to limits.
+- Tax on interest from Government of Ghana securities (treasury bills/notes/bonds) is generally exempt for resident individuals.
+
+For Sika AI: use the monthly bands to walk a user through what they will pay on a given salary. Give a concrete worked example. Always advise confirming with GRA (gra.gov.gh) or a tax practitioner because bands and thresholds change through annual budget statements (e.g., Act 1111 updated the old 2020 bands).

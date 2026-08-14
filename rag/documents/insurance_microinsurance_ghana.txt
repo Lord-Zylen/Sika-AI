@@ -1,0 +1,22 @@
+INSURANCE IN GHANA — LICENSING, COMPULSORY MOTOR COVER, AND MICRO-INSURANCE
+
+The insurance industry in Ghana is regulated by the National Insurance Commission (NIC) under the Insurance Act, 2021 (Act 1061), which replaced the old 2006 Act. Act 1061 modernized the sector — it separates life and non-life business, requires NIC approval of new products, and gives legal backing to micro-insurance.
+
+KEY FACTS:
+1. Licensing: All insurers must be licensed by the NIC. Insurers must be either life or non-life (composite companies were split up). Products must be NIC-approved to protect policyholders and ensure financial viability.
+2. Compulsory motor insurance: Under the Motor Vehicles (Third Party Insurance) Act, 1958 (as amended), anyone who uses a vehicle on a public road MUST have motor third-party insurance. Options are:
+   - Third Party (covers injury/death/damage to others only) — the most common and legally required minimum
+   - Third Party, Fire & Theft (adds cover for fire/theft loss of your own vehicle)
+   - Comprehensive (covers own damage plus third-party liabilities)
+   The NIC also runs a Motor Insurance Compensation Fund that compensates road-accident victims who cannot recover from an insurer.
+3. Micro-insurance: Section 209 of Act 1061 gives legal backing to micro-insurance sold through licensed channels (agents, mobile-money platforms, telecoms). Products are simplified, low-premium covers aimed at low-income customers — examples include mobile health/life cover (e.g., MTN aYo-type products), funeral policies, and credit-life bundled with loans. The Microinsurance Market Conduct Rules 2013 govern conduct.
+4. Common products in Ghana: Whole life, term life (funeral, mortgage, credit life, keyman), endowment/wealth products, motor, fire/theft/property, accident, marine, liability, and micro-insurance covers. Life insurers must pay claims and face NIC solvency oversight.
+5. Insurance penetration is low (around 1% of GDP), so many Ghanaians rely on informal risk-sharing (susu, funeral associations). Formal insurance can be a better fit for larger, harder risks.
+
+BUYING INSURANCE — GOOD PRACTICE:
+- Only buy from an NIC-licensed insurer; check nicgh.org if unsure.
+- Read what is covered and what is excluded; ask about premiums, waiting periods, and claims process before paying.
+- For motor insurance, do not drive uninsured — it is illegal and third-party claims can be financially ruinous.
+- For low-income users, ask about micro-insurance products sold via mobile money rather than assuming traditional premiums are out of reach.
+
+For Sika AI: when a user asks about insurance, determine the type (life, motor, health, micro) and recommend verifying the insurer is NIC-licensed. Mention that motor third-party cover is compulsory by law. Do not recommend a specific insurer by name unless the user asks. Advise confirming current minimum premium rates and product details with the insurer or NIC (nicgh.org).

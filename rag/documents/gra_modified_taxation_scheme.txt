@@ -14,7 +14,7 @@ To qualify for PTI or PTT, a person must earn income only from sources within Gh
 
 GRA also operates a Small Taxpayer Office (STO) network — around 50 offices nationwide — as a one-stop shop for small/informal taxpayers to handle domestic tax transactions. Small taxpayers are presumed to operate informally and generally not keep full business records. GRA also issues a Tax Stamp — a specially designed stamp given to small-scale informal businesses as evidence of having paid their taxes.
 
-The VAT Flat Rate Scheme (VFRS) applies to most small taxpayers who are registered for VAT (turnover above the VAT threshold), simplifying VAT compliance compared to the standard VAT regime.
+IMPORTANT (2026 UPDATE): The VAT Flat Rate Scheme (VFRS) that previously applied to many small taxpayers was ABOLISHED effective 1 January 2026 by the Value Added Tax Act, 2025 (Act 1151). VAT-registered small taxpayers must now charge VAT at the standard rate (15% VAT + 2.5% NHIL + 2.5% GETFund = 20% effective), and the VAT registration threshold rose from GHS 200,000 to GHS 750,000. See the vat_act_2026_reform document for details.
 
 Context: Ghana's informal sector makes up roughly 80% of the country's workforce (Ghana Statistical Service, 2023) but contributes only around 30% of GDP, a gap attributed to complex tax processes, low tax morale, and limited tax awareness — which is part of why GRA introduced MTS.
 

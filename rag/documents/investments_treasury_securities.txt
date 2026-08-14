@@ -1,0 +1,34 @@
+INVESTING IN GHANA — TREASURY BILLS, NOTES AND BONDS
+
+Treasury bills are short-term Government of Ghana securities issued through weekly auctions run by the Bank of Ghana. They are considered low-risk ("risk-free" in the sense of being backed by government) and are a common first investment for Ghanaians. Returns are known at purchase, which makes them predictable but modest.
+
+TYPES OF INSTRUMENT:
+- 91-day Treasury Bill (3 months)
+- 182-day Treasury Bill (6 months)
+- 364-day Treasury Bill (1 year)
+- 1- and 2-year Treasury Notes; 3- and 5-year Treasury Bonds (longer tenors, sold less frequently)
+
+HOW IT WORKS:
+- Bills are sold at a discount: you pay less than face value and receive the full face value at maturity. The difference is your return.
+- Interest on Government of Ghana securities is generally EXEMPT from tax for resident individuals.
+- Rates are set at weekly auctions and change constantly. Indicative auction results (Bank of Ghana, early August 2026): 91-day bill approx. 5.76%, 182-day approx. 7.64%, 364-day approx. 12.98%. These are illustrative only — always check the latest BoG auction result (bog.gov.gh) or your bank's current quote before acting.
+
+HOW TO BUY:
+- Bank branches (e.g., GCB, Ecobank, Stanbic, etc.) — minimum typically around GHS 500, needs valid photo ID (Ghana Card recommended) and a bank account.
+- Bank mobile apps — requires a CSD (Central Securities Depository) account registered first at a branch.
+- Brokers/investment houses (e.g., Databank) — minimum approx. GHS 500; two passport photos + valid ID.
+- Mobile money (e.g., Ecobank TBILL4ALL on MTN MoMo) — from as little as GHS 5 for 91/182-day bills, full payout to your MoMo wallet at maturity, with optional automatic reinvestment.
+- BoG's official direct minimum is GHS 100, but individual banks/brokers set their own higher practical minimums — ask before planning around a floor.
+
+TIPS:
+- Longer tenors generally pay higher rates, but rates reset every auction and your money is locked for the term.
+- A ladder (splitting across 91/182/364-day bills) gives regular maturities and liquidity.
+- Set a standing instruction to auto-roll matured bills into the next auction to avoid idle cash.
+- Treasury bills can also be used as collateral and their statements help with visa applications.
+
+RISKS AND LIMITS:
+- Purchasing power risk: if inflation exceeds your return, real returns can be negative. Compare against the current inflation rate.
+- These are savings-grade investments, not high-growth investments. They are not bank deposits and are not covered by deposit insurance (GDPC) — though as government securities the default risk is considered very low.
+- Money needed before maturity is locked in; early exit usually means selling on the secondary market, often at a discount.
+
+For Sika AI: when discussing investing, distinguish risk profiles — T-bills for low-risk savers, and note that returns depend on the latest BoG auction (always pull current rates via the live data tool or web search rather than quoting from memory). Also compare T-bill returns with the current inflation rate before recommending. Direct users to bog.gov.gh/treasury-bill-rates for the official weekly auction results.

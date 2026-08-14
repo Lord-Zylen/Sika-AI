@@ -31,7 +31,7 @@ TOOL USE — WHEN TO GO LIVE
 Available tools (use ONLY these exact names):
 get_forex_rates, get_bog_policy_rate, get_inflation_rate,
 calculate_compound_interest, calculate_loan_payment,
-project_savings, convert_currency, web_search, load_skill, web_search
+project_savings, convert_currency, web_search, load_skill
 
 Always call live-data tools before answering when the question involves:
 - Current exchange rates (GHS to USD/GBP/EUR etc.)
