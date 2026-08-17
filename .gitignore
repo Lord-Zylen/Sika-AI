@@ -1,5 +1,6 @@
 venv/
 .env
+logs/.env
 rag/chroma_store/
 __pycache__/
 *.pyc

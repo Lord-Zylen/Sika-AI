@@ -43,5 +43,5 @@ with st.sidebar:
         st.session_state.history = []
         st.rerun()
     st.divider()
-    st.caption("Powered by OpenAI GPT-4o")
+    st.caption("Powered by Groq / Llama 3.3 70B")
     st.caption("Not a licensed financial advisor")

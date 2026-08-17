@@ -8,10 +8,10 @@ and small business owners who need help with money matters in Ghana.
 
 TECH STACK
 - LLM: Groq-hosted Llama 3.3 70B (free, fast, OpenAI-compatible API)
-- Embeddings: sentence-transformers (all-MiniLM-L6-v2, runs locally, free)
-- Vector DB: ChromaDB (stores knowledge base chunks)
+- Embeddings: Google Gemini (gemini-embedding-001, free tier)
+- Vector Store: Precomputed JSON + numpy cosine similarity (no external DB)
 - Web Search: DuckDuckGo via ddgs (free, no API key)
-- UI: Streamlit chat interface
+- UI: Streamlit chat interface + vanilla JS web UI
 - Language: Python 3.14
 
 
@@ -26,8 +26,8 @@ When a user sends a message, here's what happens step by step:
    - Skill SUMMARIES are loaded (one line each, not full content)
      to save tokens — full skill content is loaded on demand via
      the load_skill tool when the LLM identifies a matching skill
-   - RAG retrieval fires: the user's message is embedded locally
-     (sentence-transformers), matched against ChromaDB (~47 chunks),
+   - RAG retrieval fires: the user's message is embedded via Google Gemini,
+     matched against precomputed embeddings (~380 chunks from 18 documents),
      and the top-4 most relevant chunks are injected into the prompt
    - Result: a lean system message with persona + skill summaries +
      relevant knowledge base context
@@ -74,15 +74,15 @@ HOW IT WAS BUILT
    - Default: Groq free tier (llama-3.3-70b-versatile)
 
 2. KNOWLEDGE BASE (rag/)
-   - 11 source documents written from official Ghana sources:
+   - 18 source documents written from official Ghana sources:
      BoG, GRA, RGD, SSNIT, NHIA, GhIPSS, and financial inclusion
      research
-   - build_index.py chunks each document into ~800-character overlapping
-     pieces, embeds them with sentence-transformers (local, free),
-     and stores vectors + metadata in ChromaDB
-   - retriever.py embeds the user's query, finds the top-4 nearest
-     chunks by cosine similarity, and returns them as context
-   - Index is rebuilt by running: python rag/build_index.py
+   - precompute_embeddings.py chunks each document into ~800-character
+     overlapping pieces, embeds them with Google Gemini (gemini-embedding-001),
+     and saves vectors + metadata to embeddings.json (committed to git)
+   - retriever.py embeds the user's query via Gemini, finds the top-4
+     nearest chunks by numpy cosine similarity, and returns them as context
+   - Index is rebuilt by running: python rag/precompute_embeddings.py
 
 3. TOOLS (tools/) — 9 tools total
    - live_data.py (4 tools):
@@ -176,10 +176,10 @@ PROJECT STRUCTURE
   tools/__init__.py    — tool schemas (9) + function map
   tools/live_data.py   — forex, BOG rate, inflation, web_search
   tools/calculator.py  — financial math functions
-  rag/build_index.py   — chunk + index documents into ChromaDB
-  rag/retriever.py     — query ChromaDB, build context for prompts
+  rag/precompute_embeddings.py — chunk + embed documents (Gemini)
+  rag/retriever.py     — query embeddings, build context for prompts
   skills/loader.py     — skill summaries + on-demand full loading
-  rag/documents/       — 11 source .txt files
+  rag/documents/       — 18 source .txt files
   skills/              — 9 skill subdirs with SKILL.md each
 
 
@@ -190,7 +190,7 @@ KEY GOTCHAS
 - live_data.py has hardcoded reference rates — update periodically
 - Groq model sometimes hallucinates tool names — caught and retried
 - .env lives at logs/.env, not project root
-- rag/chroma_store/ is gitignored — rebuild with: python rag/build_index.py
+- rag/embeddings.json is committed to git — rebuild after changes: python rag/precompute_embeddings.py
 - Groq free tier: 100K tokens/day — large prompts eat the budget fast
   (skill lazy-loading keeps requests lean at ~3K tokens each)
 
@@ -198,7 +198,7 @@ KEY GOTCHAS
 DEMO COMMANDS
 ==============
   # Build/update RAG index (after adding docs):
-  python rag/build_index.py
+  python rag/precompute_embeddings.py
 
   # Launch chat UI:
   streamlit run app.py
@@ -244,7 +244,7 @@ NOTES FOR Q&A
   languages if the user asks, but quality depends on the LLM.
 - "Does it execute transactions?" → No, guidance and calculations only.
 - "How do I add new knowledge?" → Drop a .txt or .md file into
-  rag/documents/ and run: python rag/build_index.py
+  rag/documents/ and run: python rag/precompute_embeddings.py
 - "How do I add a new skill?" → Create skills/<name>/SKILL.md with
   trigger, required inputs, steps, and guardrails. Auto-discovered.
 - "What if it doesn't know something?" → Web search fires
